@@ -1,0 +1,33 @@
+@import '../../assets/vars.scss';
+
+.search-bar {
+    width: 80%;
+    position: relative;
+    z-index: 10;
+    font-family: 'Ubuntu', sans-serif;
+    border: none;
+    outline: none;
+    padding: .5rem 0;
+    font-size: 2rem;
+    color: $green;
+    border-bottom: 2px solid $green;
+    background-color: transparent;
+
+    &:active {
+        outline: none;
+        
+    }
+    
+    
+}
+
+// style={{zIndex:"10", width:"80%", position:"relative"}}
+
+::placeholder {
+    color: $green;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }

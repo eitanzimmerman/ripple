@@ -1,0 +1,31 @@
+$blue : #BDE0FE ;
+$green : #9dc9ce ;
+
+$dark-green : #294944 ;
+$dark-blue:#a1c9ec;
+$light-green : #a3dbcb;
+$dark-blue-low:#a1c9ec46;
+$box-shadow : -5px 8px 7px rgba(0, 0, 0, 0.39);
+
+@mixin main-gradient {
+    background: rgb(87,153,143);
+    background: -moz-linear-gradient(315deg, rgba(87,153,143,1) 0%, rgba(41,73,68,1) 100%);
+    background: -webkit-linear-gradient(315deg, rgba(87,153,143,1) 0%, rgba(41,73,68,1) 100%);
+    background: linear-gradient(315deg, rgba(87,153,143,1) 0%, rgba(41,73,68,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#57998f",endColorstr="#294944",GradientType=1);
+}
+
+@mixin remove-btn-default {
+    outline: none;
+    border: none;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: transparent;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+@mixin text-background-clip {
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+}

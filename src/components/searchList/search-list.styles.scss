@@ -1,0 +1,65 @@
+@import '../../assets/vars.scss';
+
+.search-list-container {
+    width: 80%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    padding: .5rem 0;
+    max-height: 20rem;
+    min-height: 20rem;
+    overflow-y: scroll;
+    background: rgba(255, 255, 255, 0.596);
+    transform: translateX(-50%) translateY(18%);
+    z-index: 5;
+    box-shadow: $box-shadow;
+    animation: extendOnApperance .3s;
+
+
+    .search-list-item{
+        display: flex;
+        align-items: center;
+        padding: 1.2rem .5rem;
+        // padding-bottom: 2px;
+        border-bottom: .8px solid rgba(240, 240, 240, 0.164);
+        transition: background-color .2s ;
+        cursor: pointer;
+
+        &:first-child{
+            padding-top: 0;
+        }
+        &:last-child{
+            margin-bottom: 0;
+        }
+
+        &:hover{
+            background-color:  rgba(255, 255, 255, 0.753);
+        }
+
+        
+        &-img{
+            height: 4rem;
+            width: 4rem;
+            border-radius: 10rem;
+            margin-right: 1.3rem;
+        }
+
+        &-text{
+            color: black;
+            font-size: 1.6rem;
+            font-weight: 300;
+        }
+    }
+}
+
+@keyframes extendOnApperance {
+    0%{
+        width: 0px;
+        
+    }
+
+    100%{
+        width: 80%;
+        
+    }
+}

@@ -1,0 +1,75 @@
+@import '../../assets/vars.scss';
+
+.tracklist-item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: 2rem;
+
+
+    &-image {
+        min-width: 8rem;
+        min-height: 8rem;
+        border-radius: 1rem;
+        box-shadow: $box-shadow;
+        z-index: 2;
+        transition: transform .1s ease;
+        
+        &:hover {
+            transform: translateY(-.7rem) scale(1.05);
+            box-shadow: -5px 10px 10px rgba(0, 0, 0, 0.349);;
+        }
+
+        #play-icon {
+            fill:white;
+            width: 4rem;
+            height: 4rem;
+            animation: FadeIn .3s ease;
+            
+        }
+       
+    }
+
+    &-titles {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2.5rem;
+        width: 100%;
+
+        h1{
+            font-size: 1.7rem;
+            color: white;
+            width: 100%;
+        }
+        h2{
+            font-size: 1.4rem;
+            color: white;
+            font-weight: 300; 
+        }
+    }
+
+    &-details {
+        display: flex;
+        margin-right: 2rem;
+    }
+
+    &-border {
+        position: absolute;
+        top: 85%;
+        width: 100%;
+        border-bottom: 0.1rem solid #dbdbdb7c;
+    }
+
+}
+
+@keyframes FadeIn {
+    0%{
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

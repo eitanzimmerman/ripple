@@ -1,0 +1,48 @@
+@import "../../assets/vars.scss";
+
+.filter-card {
+    box-shadow: $box-shadow;
+    box-shadow: -5px 8px 7px rgba(0, 0, 0, 0.349);
+    border-radius: .3rem;
+    display: flex;
+    padding:  0 1rem;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 1rem;
+    min-width: 10rem;
+    max-width: 20rem;
+    min-height: 5rem;
+    background-color: rgba(82, 76, 76, 0.719);
+    flex: 1 1;
+    animation: scale-in-left .3s ease-out;
+
+    &-text {
+        font-weight: 700;
+        color: $blue;
+        font-size: 1.5rem;
+    }
+
+    #cross-icon{
+        width: 12px;
+        fill: white;
+        margin-right: .5rem;
+        cursor: pointer;
+    }
+}
+
+@keyframes scale-in-left {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      -webkit-transform-origin: 0% 50%;
+              transform-origin: 0% 50%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 0% 50%;
+              transform-origin: 0% 50%;
+      opacity: 1;
+    }
+  }

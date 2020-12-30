@@ -1,0 +1,33 @@
+.card-container{
+    // display: flex;
+    position: relative;
+    margin: 0 1rem;
+    width: 100%;
+    // align-items: flex-end;
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+    
+
+    .card-title {
+        color: white;
+        font-weight: 700;
+        font-size: 1.3rem;
+        padding: .2rem;
+        // width: 100%;
+        position: absolute;
+        top: 90%;
+        left: 5%;
+        transform: translateY(-50%);
+    }
+
+    .card-image{
+        transition: transform .3s ease-out;
+
+        &:hover{
+            transform: scale(1.15);
+        }
+    }
+
+}
+

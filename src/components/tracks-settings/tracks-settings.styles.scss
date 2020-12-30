@@ -1,0 +1,36 @@
+.settings-container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: rgba(235, 228, 228, 0.089);
+    border: 1px solid rgba(255, 255, 255, 0.192);
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .toggle-settings-visibility {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        h2{
+            color: white;
+            font-weight: 300;
+            align-self: flex-start;
+        }
+
+        .ctrl-icon{
+            cursor: pointer;
+            fill: white;
+            width: 2rem;
+            height: 2rem;
+            
+        }
+    }
+
+
+
+}
+

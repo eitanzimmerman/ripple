@@ -1,0 +1,33 @@
+@import '../../assets/vars.scss';
+
+.header-container {
+    background: rgb(246,250,255);
+    background: -moz-linear-gradient(61deg, rgba(246,250,255,1) 0%, rgba(236,242,251,1) 100%);
+    background: -webkit-linear-gradient(61deg, rgba(246,250,255,1) 0%, rgba(236,242,251,1) 100%);
+    background: linear-gradient(61deg, rgba(246,250,255,1) 0%, rgba(236,242,251,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f6faff",endColorstr="#ecf2fb",GradientType=1);
+box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.137);
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    #header-logo{
+        height: 6rem;
+        margin: 1rem 2rem;
+    }
+
+    .header-btn {
+        @include remove-btn-default;
+        padding: .8rem 1.5rem;
+        margin: 1rem 2rem;
+        margin-left: auto;
+        color: $dark-blue;
+        font-weight: 400;
+        font-size: 2rem;
+        border: 2px solid $dark-blue;
+        border-radius: 30px;
+
+
+    }
+   
+}

@@ -1,0 +1,30 @@
+@import '../../assets/vars.scss';
+
+.hero-container{
+    margin: 2rem 0;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    
+    
+
+    h1{
+        // @include main-gradient;
+        // @include text-background-clip;
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        color: $green;
+        
+    }
+
+    h2{
+        font-size: 2rem;
+        color: $blue;
+        // @include main-gradient;
+        // @include text-background-clip;
+    }
+}
